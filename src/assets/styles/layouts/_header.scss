@@ -1,0 +1,20 @@
+@use "../variables";
+
+.sds-header {
+    background-color: variables.$sds-color-light;
+    padding-block: variables.$sds-spacing-xs;
+}
+
+.sds-logo {
+    font-family: variables.$sds-font-family-serif;
+    font-size: variables.$sds-font-size-logo;
+    font-weight: variables.$sds-font-weight-semibold;
+    letter-spacing: variables.$sds-font-tracking-title;
+    color: variables.$sds-color-dark;
+    text-decoration: none;
+}
+
+.btn-primary {
+    background-color: variables.$sds-color-brand-primary;
+    border: none;
+}

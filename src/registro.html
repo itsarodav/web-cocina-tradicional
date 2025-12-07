@@ -1,0 +1,297 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width">
+        <link rel="stylesheet" type="text/css" href="./assets/styles/main.scss"><!-- do not remove this line! -->
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Roboto+Serif:ital,opsz,wght@0,8..144,100..900;1,8..144,100..900&display=swap" rel="stylesheet">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+        <title>Regístrate! - Sabores de siempre</title>
+    </head>
+    <body>
+        <include src="./views/header.html"></include>
+        <form action="#" method="post">
+        <!-- BLOQUE 1: DATOS DE REGISTRO -->
+            <fieldset class="border p-3 mb-4">
+                <legend class="w-auto px-2">Datos de registro</legend>
+
+                <div class="form-row">
+                <div class="form-group col-md-4">
+                    <label for="nombre">Nombre *</label>
+                    <input
+                    type="text"
+                    class="form-control"
+                    id="nombre"
+                    name="nombre"
+                    autocomplete="given-name"
+                    required
+                    />
+                </div>
+
+                <div class="form-group col-md-4">
+                    <label for="apellido1">Primer apellido *</label>
+                    <input
+                    type="text"
+                    class="form-control"
+                    id="apellido1"
+                    name="apellido1"
+                    autocomplete="family-name"
+                    required
+                    />
+                </div>
+
+                <div class="form-group col-md-4">
+                    <label for="apellido2">Segundo apellido</label>
+                    <input
+                    type="text"
+                    class="form-control"
+                    id="apellido2"
+                    name="apellido2"
+                    autocomplete="additional-name"
+                    />
+                </div>
+                </div>
+
+                <div class="form-row">
+                <div class="form-group col-md-6">
+                    <label for="email">Correo electrónico *</label>
+                    <input
+                    type="email"
+                    class="form-control"
+                    id="email"
+                    name="email"
+                    autocomplete="email"
+                    required
+                    />
+                    <small id="emailHelp" class="form-text text-muted">
+                    Usaremos tu correo para confirmarte la inscripción y enviarte la información de las jornadas.
+                    </small>
+                </div>
+
+                <div class="form-group col-md-6">
+                    <label for="telefono">Número de teléfono *</label>
+                    <input
+                    type="tel"
+                    class="form-control"
+                    id="telefono"
+                    name="telefono"
+                    autocomplete="tel"
+                    pattern="[0-9+\s]{6,}"
+                    required
+                    />
+                    <small id="phoneHelp" class="form-text text-muted">
+                    Solo te contactaremos por temas relacionados con las jornadas.
+                    </small>
+                </div>
+                </div>
+
+                <div class="form-row">
+                <div class="form-group col-md-4">
+                    <label for="ciudad">Ciudad *</label>
+                    <input
+                    type="text"
+                    class="form-control"
+                    id="ciudad"
+                    name="ciudad"
+                    autocomplete="address-level2"
+                    required
+                    />
+                </div>
+
+                <div class="form-group col-md-4">
+                    <label for="comunidad">Comunidad autónoma *</label>
+                    <select
+                    class="form-control"
+                    id="comunidad"
+                    name="comunidad"
+                    required
+                    >
+                    <option value="" selected disabled>Selecciona tu comunidad</option>
+                    <option value="Andalucía">Andalucía</option>
+                    <option value="Aragón">Aragón</option>
+                    <option value="Asturias">Asturias</option>
+                    <option value="Illes Balears">Illes Balears</option>
+                    <option value="Canarias">Canarias</option>
+                    <option value="Cantabria">Cantabria</option>
+                    <option value="Castilla-La Mancha">Castilla-La Mancha</option>
+                    <option value="Castilla y León">Castilla y León</option>
+                    <option value="Cataluña">Cataluña</option>
+                    <option value="Comunidad Valenciana">Comunidad Valenciana</option>
+                    <option value="Extremadura">Extremadura</option>
+                    <option value="Galicia">Galicia</option>
+                    <option value="La Rioja">La Rioja</option>
+                    <option value="Comunidad de Madrid">Comunidad de Madrid</option>
+                    <option value="Región de Murcia">Región de Murcia</option>
+                    <option value="Navarra">Navarra</option>
+                    <option value="País Vasco">País Vasco</option>
+                    <option value="Ceuta">Ceuta</option>
+                    <option value="Melilla">Melilla</option>
+                    </select>
+                </div>
+
+                <div class="form-group col-md-4">
+                    <label for="edad">Edad *</label>
+                    <input
+                    type="number"
+                    class="form-control"
+                    id="edad"
+                    name="edad"
+                    min="16"
+                    max="120"
+                    required
+                    />
+                </div>
+                </div>
+
+                <div class="form-row">
+                <div class="form-group col-md-6">
+                    <label for="profesion">Profesión / sector</label>
+                    <input
+                    type="text"
+                    class="form-control"
+                    id="profesion"
+                    name="profesion"
+                    placeholder="Ej. Estudiante, cocinero/a, marketing..."
+                    />
+                </div>
+
+                <div class="form-group col-md-6">
+                    <label for="acompanantes">¿Vendrás solo/a o acompañado/a?</label>
+                    <select
+                    class="form-control"
+                    id="acompanantes"
+                    name="acompanantes"
+                    >
+                    <option value="" selected disabled>Selecciona una opción</option>
+                    <option value="solo">Iré solo/a</option>
+                    <option value="1-persona">Con 1 acompañante</option>
+                    <option value="2-personas">Con 2 acompañantes</option>
+                    <option value="3-o-mas">Con 3 o más acompañantes</option>
+                    </select>
+                </div>
+                </div>
+            </fieldset>
+
+            <!-- BLOQUE 2: INTERÉS EN LAS JORNADAS -->
+            <fieldset class="border p-3 mb-4">
+                <legend class="w-auto px-2">Sobre tu interés en las jornadas</legend>
+
+                <div class="form-group">
+                <label for="nivelCocina">¿En qué nivel de cocina te encuentras? *</label>
+                <select
+                    class="form-control"
+                    id="nivelCocina"
+                    name="nivelCocina"
+                    required
+                >
+                    <option value="" selected disabled>Selecciona tu nivel</option>
+                    <option value="sin-experiencia">Sin experiencia</option>
+                    <option value="experiencia-casa">Experiencia en casa</option>
+                    <option value="experiencia-prof-ocasional">
+                    Experiencia profesional ocasional
+                    </option>
+                    <option value="profesional">
+                    Me dedico a la cocina profesional
+                    </option>
+                </select>
+                </div>
+
+                <div class="form-group">
+                <label for="platosInteres">
+                    ¿Qué platillos te gustaría preparar durante las jornadas? *
+                </label>
+                <textarea
+                    class="form-control"
+                    id="platosInteres"
+                    name="platosInteres"
+                    rows="3"
+                    required
+                ></textarea>
+                </div>
+
+                <div class="form-group">
+                <label for="tiposCocina">
+                    ¿Qué tipo de cocina tradicional te interesa más?
+                </label>
+                <textarea
+                    class="form-control"
+                    id="tiposCocina"
+                    name="tiposCocina"
+                    rows="2"
+                    placeholder="Ej. Cocina tradicional española, mediterránea, latinoamericana, repostería, etc."
+                ></textarea>
+                </div>
+
+                <div class="form-group">
+                <label for="comoEnterado">
+                    ¿Cómo te has enterado de las jornadas de cocina tradicional? *
+                </label>
+                <textarea
+                    class="form-control"
+                    id="comoEnterado"
+                    name="comoEnterado"
+                    rows="2"
+                    required
+                ></textarea>
+                </div>
+
+                <div class="form-group">
+                <label for="restriccionesAlimentarias">
+                    ¿Tienes alguna restricción o preferencia alimentaria?
+                </label>
+                <textarea
+                    class="form-control"
+                    id="restriccionesAlimentarias"
+                    name="restriccionesAlimentarias"
+                    rows="2"
+                    placeholder="Ej. Vegetarianismo, alergias, intolerancias, preferencias..."
+                ></textarea>
+                </div>
+
+                <div class="form-group">
+                <label for="experienciaCursos">
+                    ¿Has participado antes en cursos o jornadas de cocina? ¿Cuáles?
+                </label>
+                <textarea
+                    class="form-control"
+                    id="experienciaCursos"
+                    name="experienciaCursos"
+                    rows="2"
+                ></textarea>
+                </div>
+
+                <div class="form-group">
+                <label for="expectativas">
+                    ¿Qué te gustaría conseguir con estas jornadas? *
+                </label>
+                <textarea class="form-control" id="expectativas" name="expectativas" rows="3"required></textarea>
+                </div>
+
+                <div class="form-group">
+                <label for="comentariosAdicionales">
+                    Comentarios adicionales o necesidades especiales
+                </label>
+                <textarea class="form-control" id="comentariosAdicionales" name="comentariosAdicionales" rows="3" placeholder="Cuéntanos si necesitas algo específico de organización, accesibilidad, horarios, etc."></textarea>
+                </div>
+            </fieldset>
+
+            <!-- =========================
+                TÉRMINOS Y ENVÍO
+            ========================== -->
+            <div class="form-group form-check mb-3">
+                <inputtype="checkbox" class="form-check-input" id="terminos" name="terminos" required/>
+                <label class="form-check-label" for="terminos">
+                Acepto los términos y condiciones
+                </label>
+            </div>
+
+            <button type="submit" class="btn btn-primary">
+                Enviar registro
+            </button>
+        </form>
+        <include src="./views/footer.html"></include>
+        <script type="module" src="./assets/scripts/main.js"></script><!-- do not remove this line! -->
+    </body>
+</html>

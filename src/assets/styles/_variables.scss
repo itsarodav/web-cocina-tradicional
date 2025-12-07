@@ -1,12 +1,69 @@
 @use "sass:color";
 
-$font-family-sans-serif: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
+$sds-font-family-sans-serif: "Roboto", -apple-system, BlinkMacSystemFont, "Segoe UI",
   "Helvetica Neue", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji",
   "Segoe UI Symbol";
-$font-family-serif: "Georgia", "Times New Roman", serif;
+$sds-font-family-serif: "Roboto Serif","Georgia", "Times New Roman", serif;
 
-$uoc-corporate: #000078;
-$uoc-masterbrand: #73edff;
-$uoc-bg: color.scale($uoc-masterbrand, $lightness: 70%);
+// Pesos
 
-$mqMinWidth: 420px;
+$sds-font-weight-regular: 400;
+$sds-font-weight-medium: 500;
+$sds-font-weight-semibold: 600;
+$sds-font-weight-bold: 700;
+
+// Tamaños (mobile first)
+
+$sds-font-size-hero: 2.2rem;
+$sds-font-size-title: 1.5rem;
+$sds-font-size-subtitle: 1.2rem;
+$sds-font-size-body: 1rem;
+$sds-font-size-small: 0.875rem;
+$sds-font-size-button: 0.95rem;
+$sds-font-size-logo: 1.2rem;
+
+// Letter spacing
+
+$sds-font-tracking-hero: -0.02em;
+$sds-font-tracking-title: -0.015em;
+$sds-font-tracking-body: 0;
+$sds-font-tracking-small: 0.01em;
+$sds-font-tracking-button: 0.04em;
+
+
+// Line heights
+
+$sds-font-line-hero: 1.15;
+$sds-font-line-title: 1.25;
+$sds-font-line-body: 1.6;
+$sds-font-line-small: 1.4;
+$sds-font-line-button: 1.2;
+
+//Color
+
+$sds-color-brand-primary: #9C412B;
+$sds-color-brand-secondary: #CD9317;
+$sds-color-light: #F6F3EF;
+$sds-color-dark: #63362B;
+
+// Espaciados
+
+$sds-spacing-2xs: 8px;
+$sds-spacing-xs: 12px;
+$sds-spacing-sm: 16px;
+$sds-spacing-md: 24px;
+$sds-spacing-lg: 40px;
+$sds-spacing-xl: 56px;
+$sds-spacing-2xl: 80px;
+
+// Border radius
+
+$sds-border-radius-none: 0px;
+$sds-border-radius-sm: 4px;
+$sds-border-radius-md: 8px;
+$sds-border-radius-full: 50%;
+
+// Breakpoints (mobile first)
+
+$sds-breakpoint-tablet: 48rem;   // ~768px
+$sds-breakpoint-desktop: 64rem;  // ~1024px;
