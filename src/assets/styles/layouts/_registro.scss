@@ -1,0 +1,90 @@
+@use "../variables";
+@use "./functions" as fn;
+
+.sds-register-form {
+    width: 100%;
+    max-width: 100%;
+    margin-inline: auto;
+    margin-block: variables.$sds-spacing-lg;
+    padding-inline: variables.$sds-spacing-sm;
+    padding-block: variables.$sds-spacing-md;
+
+    font-family: variables.$sds-font-family-sans-serif;
+    font-size: variables.$sds-font-size-body;
+    line-height: variables.$sds-font-line-body;
+    color: variables.$sds-color-dark;
+}
+
+.sds-register-form fieldset {
+    padding: variables.$sds-spacing-md;
+    border-radius: variables.$sds-border-radius-md;
+    border-color: variables.$sds-color-brand-secondary;
+    background-color: variables.$sds-color-light;
+}
+
+.sds-register-form legend {
+    font-family: variables.$sds-font-family-serif;
+    font-size: variables.$sds-font-size-title;
+    font-weight: variables.$sds-font-weight-semibold;
+    letter-spacing: variables.$sds-font-tracking-title;
+    line-height: variables.$sds-font-line-title;
+    padding-inline: variables.$sds-spacing-xs;
+    color: variables.$sds-color-dark;
+}
+
+.sds-register-form label {
+    display: inline-block;
+    margin-bottom: variables.$sds-spacing-2xs;
+    font-weight: variables.$sds-font-weight-medium;
+    font-size: variables.$sds-font-size-small;
+    line-height: variables.$sds-font-line-small;
+}
+
+.sds-register-form .form-group {
+    margin-bottom: variables.$sds-spacing-sm;
+}
+
+.sds-register-form fieldset + fieldset {
+    margin-top: variables.$sds-spacing-md;
+}
+
+.sds-register-form .form-text {
+    font-size: variables.$sds-font-size-small;
+    line-height: variables.$sds-font-line-small;
+}
+
+.sds-register-form .form-check {
+    margin-bottom: variables.$sds-spacing-sm;
+}
+
+.sds-register-form .form-row {
+    row-gap: variables.$sds-spacing-sm;
+    margin-bottom: variables.$sds-spacing-sm;
+}
+
+.sds-register-form .btn {
+    font-size: variables.$sds-font-size-button;
+    font-weight: variables.$sds-font-weight-medium;
+    letter-spacing: variables.$sds-font-tracking-button;
+    line-height: variables.$sds-font-line-button;
+    padding-block: variables.$sds-spacing-2xs;
+    padding-inline: variables.$sds-spacing-sm;
+}
+
+@media (min-width: variables.$sds-breakpoint-tablet) {
+    .sds-register-form {
+        max-width: 40rem;
+        padding-inline: variables.$sds-spacing-md;
+        padding-block: variables.$sds-spacing-lg;
+    }
+
+    .sds-register-form fieldset {
+        padding: variables.$sds-spacing-lg;
+    }
+}
+
+@media (min-width: variables.$sds-breakpoint-desktop) {
+    .sds-register-form {
+        max-width: 48rem;
+    }
+}

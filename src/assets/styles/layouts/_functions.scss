@@ -1,0 +1,14 @@
+@use "sass:map";
+@use "../variables";
+
+$font-sizes: (
+    hero: variables.$sds-font-size-hero,
+    title: variables.$sds-font-size-title,
+    subtitle: variables.$sds-font-size-subtitle,
+    body: variables.$sds-font-size-body,
+    small: variables.$sds-font-size-small
+);
+
+@function font-size($key) {
+    @return map.get($font-sizes, $key);
+}

@@ -17,4 +17,8 @@
 .btn-primary {
     background-color: variables.$sds-color-brand-primary;
     border: none;
+
+    &:hover{
+        background-color: variables.$sds-color-brand-secondary;
+    }
 }

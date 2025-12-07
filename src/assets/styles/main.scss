@@ -8,6 +8,7 @@
  */
 @import 'variables';
 @import "dependencies";
+@import "../../../node_modules/@fortawesome/fontawesome-free/css/all.min.css";
 
 /**
  * Import layouts
@@ -17,6 +18,9 @@
  @import "layouts/home";
  @import "layouts/contact";
  @import "layouts/header";
+ @import "layouts/itinerario";
+ @import "layouts/acerca-de";
+ @import "layouts/registro";
 
 /**
  * Do NOT include anything else in this file!

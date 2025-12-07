@@ -1,0 +1,163 @@
+@use "../variables";
+
+#sobre-nosotros {
+    background-color: variables.$sds-color-light;
+    color: variables.$sds-color-dark;
+    font-family: variables.$sds-font-family-sans-serif;
+}
+
+#sobre-nosotros h1 {
+    font-family: variables.$sds-font-family-serif;
+    font-size: variables.$sds-font-size-title;
+    line-height: variables.$sds-font-line-title;
+    letter-spacing: variables.$sds-font-tracking-title;
+    font-weight: variables.$sds-font-weight-bold;
+    color: variables.$sds-color-brand-primary;
+    margin-bottom: variables.$sds-spacing-sm;
+}
+
+#sobre-nosotros .lead {
+    font-size: variables.$sds-font-size-subtitle;
+    line-height: variables.$sds-font-line-body;
+    letter-spacing: variables.$sds-font-tracking-body;
+    font-weight: variables.$sds-font-weight-medium;
+    margin-bottom: variables.$sds-spacing-sm;
+}
+
+#sobre-nosotros p {
+    font-size: variables.$sds-font-size-body;
+    line-height: variables.$sds-font-line-body;
+    letter-spacing: variables.$sds-font-tracking-body;
+    margin-bottom: variables.$sds-spacing-xs;
+}
+
+#sobre-nosotros img {
+    border-radius: variables.$sds-border-radius-md;
+    max-width: 100%;
+    height: auto;
+}
+
+#aporte-sociedad {
+    background-color: variables.$sds-color-light;
+    color: variables.$sds-color-dark;
+    font-family: variables.$sds-font-family-sans-serif;
+}
+
+#aporte-sociedad h2 {
+    font-family: variables.$sds-font-family-serif;
+    font-size: variables.$sds-font-size-title;
+    line-height: variables.$sds-font-line-title;
+    letter-spacing: variables.$sds-font-tracking-title;
+    font-weight: variables.$sds-font-weight-bold;
+    color: variables.$sds-color-brand-primary;
+    text-align: center;
+    margin-bottom: variables.$sds-spacing-sm;
+}
+
+#aporte-sociedad p {
+    font-size: variables.$sds-font-size-body;
+    line-height: variables.$sds-font-line-body;
+    letter-spacing: variables.$sds-font-tracking-body;
+}
+
+#aporte-sociedad .col-lg-8 {
+    max-width: 40rem;
+}
+
+#valores {
+    background-color: variables.$sds-color-light;
+    color: variables.$sds-color-dark;
+    font-family: variables.$sds-font-family-sans-serif;
+}
+
+#valores h2 {
+    font-family: variables.$sds-font-family-serif;
+    font-size: variables.$sds-font-size-title;
+    line-height: variables.$sds-font-line-title;
+    letter-spacing: variables.$sds-font-tracking-title;
+    font-weight: variables.$sds-font-weight-bold;
+    color: variables.$sds-color-brand-primary;
+}
+
+#proxima-edicion p {
+    font-size: variables.$sds-font-size-body;
+    line-height: variables.$sds-font-line-body;
+    letter-spacing: variables.$sds-font-tracking-body;
+}
+
+#valores header p {
+    font-size: variables.$sds-font-size-body;
+    line-height: variables.$sds-font-line-body;
+}
+
+#valores .card {
+    border: none;
+    border-radius: variables.$sds-border-radius-md;
+    background-color: #f3ecdd;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.04);
+}
+
+#valores .card-body {
+    padding: variables.$sds-spacing-md;
+}
+
+#valores .card-title {
+    font-family: variables.$sds-font-family-serif;
+    font-size: variables.$sds-font-size-subtitle;
+    line-height: variables.$sds-font-line-title;
+    letter-spacing: variables.$sds-font-tracking-title;
+    font-weight: variables.$sds-font-weight-semibold;
+    color: variables.$sds-color-brand-primary;
+    margin-bottom: variables.$sds-spacing-xs;
+}
+
+#valores .card-text {
+    font-size: variables.$sds-font-size-body;
+    line-height: variables.$sds-font-line-body;
+    letter-spacing: variables.$sds-font-tracking-body;
+}
+
+#proxima-edicion {
+    background-color:  #f1e5ca;
+    color: variables.$sds-color-brand-primary;
+    font-family: variables.$sds-font-family-sans-serif;
+    padding: 4rem 2rem;
+}
+
+#proxima-edicion h2 {
+    font-family: variables.$sds-font-family-serif;
+    font-size: variables.$sds-font-size-title;
+    line-height: variables.$sds-font-line-title;
+    letter-spacing: variables.$sds-font-tracking-title;
+    font-weight: variables.$sds-font-weight-bold;
+    margin-bottom: variables.$sds-spacing-sm;
+}
+
+#proxima-edicion a {
+    color: variables.$sds-color-brand-secondary;
+    font-weight: variables.$sds-font-weight-semibold;
+    text-decoration: underline;
+}
+
+#proxima-edicion a:hover {
+    text-decoration: none;
+}
+
+@media (min-width: variables.$sds-breakpoint-tablet) {
+    #sobre-nosotros .col-md-6:first-child {
+        max-width: 36rem;
+    }
+
+    #proxima-edicion {
+    padding-block: variables.$sds-spacing-xl;
+    padding-inline: variables.$sds-spacing-2xl;
+    }
+}
+
+@media (min-width: variables.$sds-breakpoint-desktop) {
+
+    #proxima-edicion {
+    padding-block: variables.$sds-spacing-2xl;
+    padding-inline: variables.$sds-spacing-2xl;
+    }
+}

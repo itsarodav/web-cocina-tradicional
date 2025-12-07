@@ -53,16 +53,16 @@ body{
 
 .hero-title {
   margin-bottom: 1rem;
-  font-family: var(--font-family-heading, system-ui);
-  font-size: var(--font-size-hero-title, 2.5rem);
-  line-height: var(--line-height-hero-title, 1.2);
-  font-weight: var(--font-weight-hero-title, 700);
+  font-family: variables.$sds-font-family-serif;
+  font-size: variables.$sds-font-size-hero;
+  line-height: variables.$sds-font-line-hero;
+  font-weight: variables.$sds-font-weight-bold;
 }
 
 .hero-subtitle {
-  font-family: var(--font-family-body, system-ui);
-  font-size: var(--font-size-hero-subtitle, 1rem);
-  line-height: var(--line-height-hero-subtitle, 1.5);
+  font-family: variables.$sds-font-family-sans-serif;
+  font-size: variables.$sds-font-size-subtitle;
+  line-height: variables.$sds-font-line-title;
 }
 
 .button-secondary{
@@ -76,9 +76,38 @@ body{
   }
 }
 
-/* Desktop */
+.section-intro {
+  background-color: variables.$sds-color-light;
+  color: variables.$sds-color-dark;
+}
 
-/* Altura mínima del hero en escritorio */
+.section-intro__block {
+  max-width: 36rem;
+  margin-inline: auto;
+}
+
+.section-intro__title {
+  font-family: variables.$sds-font-family-serif;
+  font-size: variables.$sds-font-size-title;
+  line-height: variables.$sds-font-line-title;
+  letter-spacing: variables.$sds-font-tracking-title;
+  font-weight: variables.$sds-font-weight-bold;
+  color: variables.$sds-color-brand-primary;
+}
+
+.section-intro__text {
+  font-family: variables.$sds-font-family-sans-serif;
+  font-size: variables.$sds-font-size-body;
+  line-height: variables.$sds-font-line-body;
+  letter-spacing: variables.$sds-font-tracking-body;
+}
+
+/* Imagen central */
+.section-intro__image {
+  border-radius: variables.$sds-border-radius-md;
+  display: block;
+}
+
 @media (min-width: $sds-breakpoint-desktop) {
 
   .hero-row {
@@ -108,16 +137,7 @@ body{
     justify-content: center;
   }
 
-  .hero-title {
-    font-family: var(--font-family-heading, system-ui);
-    font-size: var(--font-size-hero-title, 2.5rem);
-    line-height: 1.2;
-    font-weight: 700;
-  }
-
-  .hero-subtitle {
-    font-family: var(--font-family-body, system-ui);
-    font-size: 1rem;
-    line-height: 1.5;
+    .section-intro__block {
+    margin-inline: 0;
   }
 }

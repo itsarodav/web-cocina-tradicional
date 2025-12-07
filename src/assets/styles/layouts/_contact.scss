@@ -1,5 +1,30 @@
 @use "../variables";
 
-.newsletter-container {
-    background-color: blue;
+.newsletter-section {
+    background-color:  #f1e5ca;
+}
+
+.newsletter-section__inner {
+    max-width: 30rem;
+    margin-inline: auto;
+    padding: variables.$sds-spacing-sm;
+}
+
+.newsletter-section__title {
+    font-family: variables.$sds-font-family-serif;
+    font-size: variables.$sds-font-size-title;
+    line-height: variables.$sds-font-line-title;
+    letter-spacing: variables.$sds-font-tracking-title;
+    font-weight: variables.$sds-font-weight-bold;
+    color: variables.$sds-color-brand-primary;
+    text-align: center;
+    margin-bottom: variables.$sds-spacing-md;
+}
+
+@media (min-width: variables.$sds-breakpoint-desktop) {
+    .newsletter-section__inner {
+        max-width: 36rem;
+        padding-inline: variables.$sds-spacing-lg;
+        padding-block: variables.$sds-spacing-md;
+    }
 }

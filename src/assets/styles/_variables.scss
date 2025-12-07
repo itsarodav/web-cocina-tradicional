@@ -33,7 +33,7 @@ $sds-font-tracking-button: 0.04em;
 
 // Line heights
 
-$sds-font-line-hero: 1.15;
+$sds-font-line-hero: 1.4;
 $sds-font-line-title: 1.25;
 $sds-font-line-body: 1.6;
 $sds-font-line-small: 1.4;
@@ -41,10 +41,10 @@ $sds-font-line-button: 1.2;
 
 //Color
 
-$sds-color-brand-primary: #9C412B;
-$sds-color-brand-secondary: #CD9317;
-$sds-color-light: #F6F3EF;
-$sds-color-dark: #63362B;
+$sds-color-brand-primary:oklch(0.4933 0.1269 34.86);
+$sds-color-brand-secondary:oklch(0.7019 0.1406 79.27);
+$sds-color-light:oklch(0.9654 0.0062 75.41);
+$sds-color-dark:oklch(0.3866 0.0675 34.65);
 
 // Espaciados
 
@@ -65,5 +65,5 @@ $sds-border-radius-full: 50%;
 
 // Breakpoints (mobile first)
 
-$sds-breakpoint-tablet: 48rem;   // ~768px
-$sds-breakpoint-desktop: 64rem;  // ~1024px;
+$sds-breakpoint-tablet: 48rem;   // ...768px
+$sds-breakpoint-desktop: 64rem;  // ...1024px;

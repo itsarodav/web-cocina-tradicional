@@ -1,0 +1,31 @@
+@use "../variables";
+@use "./functions" as fn;
+
+.page-itinerario {
+    padding: variables.$sds-spacing-lg variables.$sds-spacing-sm;
+    color: variables.$sds-color-dark;
+}
+
+// :is() para agrupar títulos
+.page-itinerario :is(h1, h2, h3, .card-title) {
+    font-family: variables.$sds-font-family-serif;
+    font-size: fn.font-size(title);
+    line-height: variables.$sds-font-line-title;
+    letter-spacing: variables.$sds-font-tracking-title;
+    font-weight: variables.$sds-font-weight-bold;
+    color: variables.$sds-color-brand-primary;
+}
+
+.page-itinerario :is(p, li, .lead, .card-text) {
+    font-family: variables.$sds-font-family-sans-serif;
+    font-size: fn.font-size(body);
+    line-height: variables.$sds-font-line-body;
+    letter-spacing: variables.$sds-font-tracking-body;
+    color: variables.$sds-color-dark;
+}
+
+// :has()
+.page-itinerario section:has(.card) {
+    border-radius: variables.$sds-border-radius-md;
+    padding-block: variables.$sds-spacing-md;
+}
